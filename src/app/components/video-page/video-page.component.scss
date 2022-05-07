@@ -1,0 +1,112 @@
+:host {
+    display: block;
+  }
+
+.container {
+    padding-top: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 720px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    box-shadow: 5px 5px 5px gray;
+    margin: 0 20px 20px 0;
+}
+
+.comment {
+    width: 520px;
+    height: 45px;
+    padding: 5px 10px 5px;
+    border: 2px solid rgba(128, 128, 128, 0.735);
+    border: none;
+}
+
+.comments {
+    height: 333px;
+    width: 350px;
+    border: 2px solid rgba(128, 128, 128, 0.783);
+    border-right: none;
+}
+
+.comments-content {
+    padding: 5px 5px 5px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.735);
+}
+
+.btn {
+    box-shadow: 1px 1px 2px gray;
+    margin-right: 10px;
+}
+
+.btn-more {
+    display: flex;
+    margin: 0 auto;
+}
+
+.show-more {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .content {
+        box-shadow: none;
+    }
+
+    .video {
+        width: 420px;
+    }
+
+    .comment {
+        width: 60%;
+    }
+
+    .comments {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .content {
+        box-shadow: none;
+    }
+
+    .video {
+        width: 50%;
+    }
+
+    .comment {
+        width: 50%;
+    }
+
+    .comments {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

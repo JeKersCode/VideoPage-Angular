@@ -1,0 +1,130 @@
+<div class="container">
+    <div class="flex-column">
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <iframe class="video" width="520" height="280" src="https://www.youtube.com/embed/qVf5Z1hz_wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <form id="form" (submit)="addCom(comment.value)">
+                        <input 
+                            form="form"
+                            name="comment"
+                            maxlength="50" 
+                            type="text" 
+                            id="comment" 
+                            placeholder="Напишите комментарий" 
+                            class="comment"
+                            #comment>
+                    </form>
+                </div>
+                <div class="comments">
+                    <span class="comments-content">Комментарии</span>
+                    <ul>
+                        <li *ngFor="let com of comments">{{com}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button 
+                form="form" 
+                type="submit" 
+                id="button" 
+                class="btn btn-info">
+                Отправить
+                </button>
+                <button 
+                form="form" 
+                type="reset" 
+                id="buttonReset"
+                class="btn btn-warning">
+                Очистить
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <iframe class="video" width="520" height="280" src="https://www.youtube.com/embed/c8nUR7GCcXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <form id="form2">
+                        <input 
+                            form="form2"
+                            name="comment"
+                            maxlength="50" 
+                            type="text" 
+                            id="comment" 
+                            placeholder="Напишите комментарий" 
+                            class="comment"
+                            #comment1>
+                    </form>
+                </div>
+                <div class="comments">
+                    <span class="comments-content">Комментарии</span>
+                    <ul>
+                        <li *ngFor="let com2 of comments2">{{com2}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button 
+                form="form2" 
+                type="submit" 
+                id="button" 
+                class="btn btn-info">
+                Отправить
+                </button>
+                <button 
+                form="form2" 
+                type="reset" 
+                id="buttonReset"
+                class="btn btn-warning">
+                Очистить
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <iframe class="video" width="520" height="280" src="https://www.youtube.com/embed/WlsgXUvQ3tc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <form id="form3">
+                        <input 
+                            form="form3"
+                            name="comment"
+                            maxlength="50" 
+                            type="text" 
+                            id="comment" 
+                            placeholder="Напишите комментарий" 
+                            class="comment"
+                            #comment>
+                    </form>
+                </div>
+                <div class="comments">
+                    <span class="comments-content">Комментарии</span>
+                    <ul>
+                        <li *ngFor="let com3 of comments2">{{com3}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button 
+                form="form3" 
+                type="submit" 
+                id="button" 
+                class="btn btn-info">
+                Отправить
+                </button>
+                <button 
+                form="form3" 
+                type="reset" 
+                id="buttonReset"
+                class="btn btn-warning">
+                Очистить
+                </button>
+            </div>
+        </div>
+        
+        <div class="show-more">
+            <button type="button" class="btn btn-info btn-more"><a routerLink="/more">Показать ещё</a></button>
+        </div>
+    </div>
+</div>
